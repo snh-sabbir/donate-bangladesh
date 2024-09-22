@@ -28,6 +28,7 @@ document.getElementById('btn-one')
             document.getElementById('first-card-balance').innerText = newBalance;
             const newMainBal = mainBalNumber - inputNumber;
             document.getElementById('main-balance').innerText = newMainBal;
+            alertMessege('btn-one');
         } else {
             alert("Wrong amount");
         }
@@ -50,6 +51,7 @@ document.getElementById('btn-two')
             document.getElementById('second-card-balance').innerText = newBalance;
             const newMainBal = mainBalNumber - inputNumber;
             document.getElementById('main-balance').innerText = newMainBal;
+            alertMessege('btn-two');
         } else {
             alert("Wrong amount");
         }
@@ -72,13 +74,9 @@ document.getElementById('btn-three')
             document.getElementById('third-card-balance').innerText = newBalance;
             const newMainBal = mainBalNumber - inputNumber;
             document.getElementById('main-balance').innerText = newMainBal;
+            alertMessege('btn-three');
         } else {
             alert("Wrong amount");
         }
 
     });
-
-document.getElementById('btn-one').addEventListener('click', function(event){
-    event.preventDefault();
-    alertMessege('btn-one');
-});

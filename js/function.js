@@ -1,7 +1,11 @@
 function alertMessege (id){
     alert(`
-        Congratulations!!!! You just donated. We appreciate it.
+Thank You for your donation.
+        `)
+};
 
-        Thank You for your donation.
+function wrongMsg(id){
+    alert(`
+Sorry!!! You do not have sufficient amount.        
         `)
 }
