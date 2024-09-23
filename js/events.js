@@ -48,7 +48,7 @@ document.getElementById('btn-one')
             `;
             document.getElementById('histories').appendChild(div);
         } else {
-            alert("Wrong amount");
+            wrongMsg('btn-one');
         }
 
     });
@@ -77,7 +77,7 @@ document.getElementById('btn-two')
             `;
             document.getElementById('histories').appendChild(div);
         } else {
-            alert("Wrong amount");
+            wrongMsg('btn-two');
         }
 
     });
@@ -106,7 +106,7 @@ document.getElementById('btn-three')
             `;
             document.getElementById('histories').appendChild(div);
         } else {
-            alert("Wrong amount");
+            wrongMsg('btn-three');
         }
 
     });
