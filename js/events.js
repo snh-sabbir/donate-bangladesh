@@ -2,7 +2,8 @@
 document.getElementById('blog-btn').addEventListener('click', function (event) {
     event.preventDefault();
     window.location.href = 'blog.html';
-})
+});
+
 
 // button events
 document.getElementById('btn-donation')
@@ -35,7 +36,6 @@ document.getElementById('btn-one')
         const mainBal = document.getElementById('main-balance').innerHTML;
         const mainBalNumber = Number(mainBal);
 
-
         if (inputNumber <= 5500 && inputNumber > 0) {
             const newBalance = firstCardBalanceNumber + inputNumber;
             document.getElementById('first-card-balance').innerText = newBalance;
@@ -65,7 +65,6 @@ document.getElementById('btn-two')
         const secondCardBalanceNumber = Number(secondCardBalance);
         const mainBal = document.getElementById('main-balance').innerHTML;
         const mainBalNumber = Number(mainBal);
-
 
         if (inputNumber <= 5500 && inputNumber > 0) {
             const newBalance = secondCardBalanceNumber + inputNumber;
@@ -97,7 +96,6 @@ document.getElementById('btn-three')
         const mainBal = document.getElementById('main-balance').innerHTML;
         const mainBalNumber = Number(mainBal);
 
-
         if (inputNumber <= 5500 && inputNumber > 0) {
             const newBalance = thirdCardBalanceNumber + inputNumber;
             document.getElementById('third-card-balance').innerText = newBalance;
@@ -111,8 +109,16 @@ document.getElementById('btn-three')
             `;
             document.getElementById('histories').appendChild(div);
             document.getElementById('no-history-msg').classList.add('hidden');
-        } else {
+        }else {
             wrongMsg('btn-three');
         }
 
     });
+
+if (document.getElementById('main-balance') <= 0){
+    alert('You do not have sufficient amount for donate')
+};
+
+if(document.getElementById('main-balance') < 0){
+    alert('You do no have sufficient balance. Please recharge your amount.')
+};
